@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 10</title>
+</head>
+<body>
+    <script>
+        var n = parseInt(prompt("Digite um número:"));
+
+
+        function imprimirTabuada(numero) {
+        var i = 1;
+            while (i <= 10) {
+                 document.write(numero + " x " + i + " = " + (numero * i) );
+                 document.write("/ \n")
+                     i++;
+             }
+        }
+
+        var contador = 1;
+
+
+            while (contador <= n) {
+                document.write("Tabuada do " + contador + ":");
+                document.write("/ \n")
+                    imprimirTabuada(contador); 
+                 document.write("/ \n")
+                     contador++;
+            }
+    </script>
+</body>
+</html>

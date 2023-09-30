@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 11</title>
+</head>
+<body>
+    <script>
+        
+        let dentroIntervalo = 0;
+        let foraIntervalo = 0;
+
+    for (let i = 0; i < 10; i++) {
+        const valor = parseFloat(prompt("Informe o " + (i + 1) + "º valor:"));
+
+    if (valor >= 24 && valor <= 42) {
+          dentroIntervalo++;
+     } else {
+             foraIntervalo++;
+             }
+        }
+
+document.write("Valores dentro do intervalo: " + dentroIntervalo);
+document.write("Valores fora do intervalo: " + foraIntervalo);
+
+    </script>
+</body>
+</html>

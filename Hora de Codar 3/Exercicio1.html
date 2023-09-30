@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 1</title>
+</head>
+<body>
+    <script>
+        var v1 = parseFloat(prompt("Digite um valor:"));
+        var v2 = parseFloat(prompt("Digite um segundo valor:"));
+
+        while (v2 <= 0){
+            alert("O número deve ser maior que zero, informe novamente.")
+            v2 = prompt("Informe outro valor:")
+        }
+
+        document.write("A divisão entre eles é " + (v1 / v2));
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 5</title>
+</head>
+<body>
+    <script>
+         var soma = 0;
+        var contador = 0;
+
+        var n = prompt("Informe um número:");
+
+        var n2 = prompt("Informe outro número:");
+         if(n2 < n){
+            alert("Informe um numero maior que o primeiro");
+            n2 = prompt("Informe outro número");
+        }
+
+        n = parseFloat(n);
+        n2 = parseFloat(n2);
+        
+       while(n <= n2){
+        soma += n;
+        contador++;
+        n++;
+       }
+
+       var media = soma / contador;
+
+       document.write("A média aritmética entre todos os números informado é " + media);
+    </script>
+</body>
+</html>
